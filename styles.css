@@ -1,5 +1,5 @@
 /* Reset some default browser styles */
-body, h1, h3, p, figure {
+body, h1, h2, h3, p, figure {
     margin: 0;
     padding: 0;
     color: #1E416D; /* Dark blue color for text content */
@@ -206,6 +206,10 @@ color: #FFFFFF;}
     color: #1E416D; /* Dark blue color for section title */
 }
 
+.section-title-h2 {
+    color: #1E416D;
+}
+
 /* Style for the Standings Table */
 .table {
     width: 100%;
@@ -240,7 +244,7 @@ color: #FFFFFF;}
 /* Style for Sponsors Section */
 #sponsors {
     background-color: #1E416D; /* Dark blue background color for sponsors section */
-    color: #FFFFFF; /* White text color for sponsors section */
+    color: grey; /* White text color for sponsors section */
     padding: 60px 0;
 }
 
