@@ -1,0 +1,340 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, figure {
+    margin: 0;
+    padding: 0;
+    color: #4C4C4C; /* Dark gray color for text content */
+}
+
+figure.col-6 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.5;
+}
+
+/* Header styles */
+header {
+    padding-top: 56px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #F8E9E9;
+    color: #4C4C4C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+}
+
+.background-image {
+    background-image: url('assets/QooApp.jpeg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Team Information Section styles */
+#team .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#team article,
+#team figure {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#team article h3,
+#team article h1 {
+    order: -1;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    #team article,
+    #team figure {
+        width: 48%;
+        margin: 0 1%;
+    }
+    main {
+        padding-top: 56px;
+    }
+}
+
+#team {
+    padding: 60px 0;
+}
+
+#team article {
+    text-align: justify;
+}
+
+#team h1 {
+    font-size: 2em;
+    color: #4C4C4C;
+}
+
+#team p {
+    margin-bottom: 20px;
+    color: #4C4C4C;
+}
+
+#team figure img {
+    width: 100%;
+}
+
+/* Players Section styles */
+#players {
+    text-align: center;
+}
+
+#players .card-deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#players .card {
+    max-width: 300px;
+    margin: 10px;
+    background-color: #E5E5E5;
+}
+
+#players .card img {
+    max-width: 100%;
+    height: 300px;
+}
+
+#players .card-body {
+    text-align: left;
+}
+
+#players .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#players .info p {
+    margin: 0;
+}
+
+/* Styling for Fixtures Section */
+#fixtures {
+    background-color: #F8E9E9;
+    color: #4C4C4C;
+    padding: 20px;
+}
+
+#fixtures .stadium {
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.section-title {
+    color: #4C4C4C;
+}
+
+/* Styling for Fixture */
+.fixture {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.team-logo {
+    max-width: 50px;
+}
+
+.team-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.vs {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0 75px;
+}
+
+.date-time {
+    display: contents;
+    justify-content: center;
+    color: #555;
+    text-align: center;
+}
+
+/* Add this CSS in your stylesheet or in a style tag in your HTML file */
+
+/* Style for Standings Section */
+#standings {
+    padding: 60px 0;
+}
+
+.section-title {
+    color: #4C4C4C;
+}
+
+/* Style for the Standings Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.table thead th {
+    background-color: #E5E5E5;
+    color: #4C4C4C;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #d8e7fc;
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Style for Sponsors Section */
+#sponsors {
+    background-color: #F8E9E9;
+    color: #4C4C4C;
+    padding: 60px 0;
+}
+
+.section-title {
+    color: #4C4C4C;
+}
+
+/* Style for Sponsor Cards */
+.card {
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.sponsor-logo {
+    margin: 0 auto;
+    display: block;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Section title styles */
+.section-title {
+    margin-bottom: 30px;
+}
+
+/* Style for Footer Section */
+footer {
+    background-color: #E5E5E5;
+    color: #4C4C4C;
+    padding-top: 2rem;
+}
+
+/* Style for Nankatsu FC Logo */
+footer h6 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for Address Section */
+footer p {
+    margin-bottom: 1rem;
+    color: #4C4C4C;
+}
+
+/* Style for Social Media Buttons */
+footer .btn-floating {
+    border-radius: 30px;
+    margin: 0.1rem;
+}
+
+/* Style for Company, Policy, Get In Touch Section */
+footer .col-md-2,
+footer .col-md-3,
+footer .col-md-4 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+/* Style for Copyright Section */
+footer .text-center {
+    font-size: 14px;
+    padding: 3px;
+    color: #4C4C4C;
+}
+
+/* Style for Horizontal Rule */
+footer hr {
+    margin: 1rem 0;
+    border-color: #333;
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+    .navbar .navbar-collapse {
+        display: block;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        color: #4C4C4C;
+    }
+}
