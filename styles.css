@@ -169,7 +169,7 @@ header {
 .vs {
     font-weight: bold;
     font-size: 35px;
-    margin: 10px 0; /* Add some spacing above and below 'vs' */
+    margin: 10px 35px; /* Add some spacing above and below 'vs' */
 }
 
 .date-time {
