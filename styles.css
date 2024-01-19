@@ -2,7 +2,7 @@
 body, h1, h2, h3, p, figure {
     margin: 0;
     padding: 0;
-    color: #4C4C4C; /* Dark gray color for text content */
+    color: #ffff; /* Dark blue color for text content */
 }
 
 figure.col-6 img {
@@ -12,8 +12,8 @@ figure.col-6 img {
 }
 
 body {
-    font-family: 'Helvetica', sans-serif;
-    line-height: 1.5;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    line-height: 1.6;
 }
 
 /* Header styles */
@@ -23,8 +23,8 @@ header {
 
 .navbar {
     margin-bottom: 0;
-    background-color: #F8E9E9;
-    color: #4C4C4C;
+    background-color: #1E416D; /* Dark blue background for navbar */
+    color: #FFFFFF; /* White text color for navbar */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,18 +83,10 @@ header {
     text-align: justify;
 }
 
-#team h1 {
-    font-size: 2em;
-    color: #4C4C4C;
-}
-
-#team p {
-    margin-bottom: 20px;
-    color: #4C4C4C;
-}
-
+#team h1,
+#team p,
 #team figure img {
-    width: 100%;
+    color: #1E416D; /* Dark blue color for text content */
 }
 
 /* Players Section styles */
@@ -112,7 +104,8 @@ header {
 #players .card {
     max-width: 300px;
     margin: 10px;
-    background-color: #E5E5E5;
+    background-color: rgba(255, 255, 255, 0.8); /* White background color for player cards */
+    color: #1E416D; /* Dark blue color for text content in player cards */
 }
 
 #players .card img {
@@ -122,72 +115,76 @@ header {
 
 #players .card-body {
     text-align: left;
+    color: #1E416D; /* Dark blue color for text content in card body */
 }
-
 #players .info {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    color: #1E416D; /* Dark blue color for text content in player info */
 }
 
 #players .info p {
     margin: 0;
 }
 
+#players .badge {
+    background-color: burlywood;
+    color: #1E416D; /* Dark blue color for badge text */
+}
+
 /* Styling for Fixtures Section */
-#fixtures {
-    background-color: #F8E9E9;
-    color: #4C4C4C;
-    padding: 20px;
-}
-
-#fixtures .stadium {
-    justify-content: center;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.section-title {
-    color: #4C4C4C;
-}
-
 /* Styling for Fixture */
 .fixture {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
+    background-color: #1E416D; /* Dark blue background color for fixture card */
+    color: #FFFFFF; /* White text color for fixture card content */
+    border-radius: 8px; /* Rounded corners for fixture card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    transition: transform 0.2s; /* Smooth transition on hover */
+    padding: 20px; /* Increased padding for a slightly larger size */
+}
+
+.fixture:hover {
+    transform: scale(1.05); /* Slightly larger scale on hover for an interactive effect */
 }
 
 .team-logo {
-    max-width: 50px;
+    max-width: 50px; /* Slightly larger team logos */
 }
 
 .team-logo img {
     height: 50px;
     width: 50px;
-}
-
-.teams {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+    border-radius: 50%; /* Circular team logos */
+    margin-right: 8px; /* Spacing between logos and team names */
 }
 
 .vs {
     font-weight: bold;
-    font-size: 35px;
-    margin: 0 75px;
+    font-size: 35px; /* Font size for 'vs' similar to before */
+    margin: 0 75px; /* Spacing around 'vs' similar to before */
 }
 
 .date-time {
-    display: contents;
-    justify-content: center;
-    color: #555;
+    color: #555; /* Dimmed color for date and time similar to before */
     text-align: center;
 }
 
-/* Add this CSS in your stylesheet or in a style tag in your HTML file */
+#fixtures .stadium {
+    text-align: center;
+    color: #FFFFFF; /* White color for stadium text */
+    font-style: italic; /* Italicize stadium text */
+    font-size: 14px; /* Font size for stadium text */
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+#fixtures .stadium-name {
+    text-align: center;
+    color: #1E416D; /* Dark blue color for stadium name */
+    font-weight: bold; /* Bold font for stadium name */
+    font-size: 18px; /* Font size for stadium name */
+}
+
 
 /* Style for Standings Section */
 #standings {
@@ -195,7 +192,7 @@ header {
 }
 
 .section-title {
-    color: #4C4C4C;
+    color: #1E416D; /* Dark blue color for section title */
 }
 
 /* Style for the Standings Table */
@@ -213,7 +210,7 @@ header {
 
 .table thead th {
     background-color: #E5E5E5;
-    color: #4C4C4C;
+    color: #1E416D; /* Dark blue color for table header text */
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -231,13 +228,13 @@ header {
 
 /* Style for Sponsors Section */
 #sponsors {
-    background-color: #F8E9E9;
-    color: #4C4C4C;
+    background-color: #1E416D; /* Dark blue background color for sponsors section */
+    color: #FFFFFF; /* White text color for sponsors section */
     padding: 60px 0;
 }
 
 .section-title {
-    color: #4C4C4C;
+    color: #1E416D; /* Dark blue color for section title */
 }
 
 /* Style for Sponsor Cards */
@@ -272,8 +269,8 @@ header {
 
 /* Style for Footer Section */
 footer {
-    background-color: #E5E5E5;
-    color: #4C4C4C;
+    background-color: #1E416D; /* Dark blue background color for footer */
+    color: #FFFFFF; /* White text color for footer */
     padding-top: 2rem;
 }
 
@@ -286,7 +283,7 @@ footer h6 img {
 /* Style for Address Section */
 footer p {
     margin-bottom: 1rem;
-    color: #4C4C4C;
+    color: #FFFFFF; /* White text color for footer address */
 }
 
 /* Style for Social Media Buttons */
@@ -307,13 +304,13 @@ footer .col-md-4 {
 footer .text-center {
     font-size: 14px;
     padding: 3px;
-    color: #4C4C4C;
+    color: #FFFFFF; /* White text color for copyright section */
 }
 
 /* Style for Horizontal Rule */
 footer hr {
     margin: 1rem 0;
-    border-color: #333;
+    border-color: #FFFFFF; /* White border color for horizontal rule */
 }
 
 /* Media query for larger screens */
@@ -335,6 +332,6 @@ footer hr {
 
     .navbar-nav .nav-link {
         padding: 10px;
-        color: #4C4C4C;
+        color: #FFFFFF; /* White text color for navbar links on larger screens */
     }
 }
