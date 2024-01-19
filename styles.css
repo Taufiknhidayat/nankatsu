@@ -136,54 +136,60 @@ header {
 /* Styling for Fixtures Section */
 /* Styling for Fixture */
 .fixture {
-    background-color: #1E416D; /* Dark blue background color for fixture card */
-    color: #FFFFFF; /* White text color for fixture card content */
-    border-radius: 8px; /* Rounded corners for fixture card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
-    transition: transform 0.2s; /* Smooth transition on hover */
-    padding: 20px; /* Increased padding for a slightly larger size */
+    background-color: #1E416D;
+    color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing between fixtures */
 }
 
 .fixture:hover {
-    transform: scale(1.05); /* Slightly larger scale on hover for an interactive effect */
+    transform: scale(1.05);
 }
 
 .team-logo {
-    max-width: 50px; /* Slightly larger team logos */
+    max-width: 50px;
+    max-height: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .team-logo img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%; /* Circular team logos */
-    margin-right: 8px; /* Spacing between logos and team names */
+    max-width: 50px;
+    max-height: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .vs {
     font-weight: bold;
-    font-size: 35px; /* Font size for 'vs' similar to before */
-    margin: 0 75px; /* Spacing around 'vs' similar to before */
+    font-size: 35px;
+    margin: 10px 0; /* Add some spacing above and below 'vs' */
 }
 
 .date-time {
-    color: #555; /* Dimmed color for date and time similar to before */
-    text-align: center;
+    color: #555;
 }
 
 #fixtures .stadium {
-    text-align: center;
-    color: #FFFFFF; /* White color for stadium text */
-    font-style: italic; /* Italicize stadium text */
-    font-size: 14px; /* Font size for stadium text */
-    margin-bottom: 10px; /* Add margin at the bottom */
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 #fixtures .stadium-name {
-    text-align: center;
-    color: #1E416D; /* Dark blue color for stadium name */
-    font-weight: bold; /* Bold font for stadium name */
-    font-size: 18px; /* Font size for stadium name */
+    color: #1E416D;
+    font-weight: bold;
+    font-size: 18px;
 }
+
+
 
 
 /* Style for Standings Section */
