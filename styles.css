@@ -2,7 +2,7 @@
 body, h1, h2, h3, p, figure {
     margin: 0;
     padding: 0;
-    color: #ffff; /* Dark blue color for text content */
+    color: #1E416D; /* Dark blue color for text content */
 }
 
 figure.col-6 img {
