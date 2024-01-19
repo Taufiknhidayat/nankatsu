@@ -1,19 +1,107 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p, figure {
-    margin: 0;
-    padding: 0;
-    color: #1E416D; /* Dark blue color for text content */
+/* Navbar styles */
+.navbar {
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-figure.col-6 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+/* Navbar Link styles */
+.navbar-nav .nav-link {
+    padding: 10px;
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
-body {
-    font-family: 'Poppins', sans-serif; /* Use Poppins font */
-    line-height: 1.6;
+/* Navbar Dropdown Link styles */
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+    color: #FFFFFF; /* Putih untuk teks saat dihover */
+}
+
+/* Navbar Dropdown Menu styles */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: #F5F5DC; /* Krem */
+}
+
+/* Navbar Dropdown Menu Item styles */
+.navbar-nav .nav-item.dropdown .dropdown-menu a {
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Navbar Dropdown Menu Item Hover styles */
+.navbar-nav .nav-item.dropdown .dropdown-menu a:hover {
+    background-color: #2F4F4F; /* Hitam Coklat saat dihover */
+    color: #FFFFFF; /* Putih untuk teks saat dihover */
+}
+
+/* Navbar Dropdown Logo styles */
+.navbar-nav .nav-item.dropdown .navbar-brand img {
+    max-height: 30px; /* Sesuaikan ukuran maksimum sesuai kebutuhan */
+}
+
+/* Navbar Dropdown Menu styles */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Navbar Dropdown Menu Item styles */
+.navbar-nav .nav-item.dropdown .dropdown-menu a {
+    color: #FFFFFF; /* Putih */
+}
+
+/* Navbar Dropdown Menu Item Hover styles */
+.navbar-nav .nav-item.dropdown .dropdown-menu a:hover {
+    background-color: #D2B48C; /* Tan saat dihover */
+    color: #2F4F4F; /* Hitam Coklat saat dihover */
+}
+
+
+/* Background styles */
+.background-image {
+    background-image: url('assets/QooApp.jpeg');
+}
+
+/* Team Information Section styles */
+#team h1,
+#team p,
+#team figure img {
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Players Section styles */
+#players .card {
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Styling for Fixtures Section */
+.fixture {
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Style for Standings Section */
+#standings {
+    background-color: #F5F5DC; /* Krem */
+}
+
+/* Style for Sponsor Cards */
+.card {
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Footer Section styles */
+footer {
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Copyright Section styles */
+footer .text-center {
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Horizontal Rule styles */
+footer hr {
+    border-color: #2F4F4F; /* Hitam Coklat */
 }
 
 /* Header styles */
@@ -21,24 +109,23 @@ header {
     padding-top: 56px;
 }
 
+/* Styling for Navbar */
 .navbar {
     margin-bottom: 0;
-    background-color: #1E416D; /* Dark blue background for navbar */
-    color: #FFFFFF; /* White text color for navbar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar Brand styles */
 .navbar-brand img {
     max-height: 40px;
 }
 
+/* Background Section styles */
 .background {
     position: relative;
     width: 100%;
 }
 
 .background-image {
-    background-image: url('assets/QooApp.jpeg');
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -46,6 +133,10 @@ header {
 }
 
 /* Team Information Section styles */
+#team {
+    padding: 60px 0;
+}
+
 #team .row {
     display: flex;
     flex-wrap: wrap;
@@ -75,23 +166,14 @@ header {
     }
 }
 
-#team {
-    padding: 60px 0;
-}
-
 #team article {
     text-align: justify;
-}
-
-#team h1,
-#team p,
-#team figure img {
-    color: #1E416D; /* Dark blue color for text content */
 }
 
 /* Players Section styles */
 #players {
     text-align: center;
+    padding: 60px 0;
 }
 
 #players .card-deck {
@@ -104,8 +186,8 @@ header {
 #players .card {
     max-width: 300px;
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* White background color for player cards */
-    color: #1E416D; /* Dark blue color for text content in player cards */
+    background-color: rgba(196, 158, 114, 0.8); /* Tan */
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 #players .card img {
@@ -115,13 +197,14 @@ header {
 
 #players .card-body {
     text-align: left;
-    color: #1E416D; /* Dark blue color for text content in card body */
+    color: #2F4F4F; /* Hitam Coklat */
 }
+
 #players .info {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    color: #1E416D; /* Dark blue color for text content in player info */
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 #players .info p {
@@ -129,15 +212,18 @@ header {
 }
 
 #players .badge {
-    background-color: burlywood;
-    color: #1E416D; /* Dark blue color for badge text */
+    background-color: #D2B48C; /* Burlywood */
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 /* Styling for Fixtures Section */
-/* Styling for Fixture */
+#fixtures {
+    padding: 60px 0;
+}
+
 .fixture {
-    background-color: #1E416D;
-    color: #FFFFFF;
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -151,10 +237,9 @@ header {
     transform: scale(1.05);
 }
 
-
 .fixture p {
-color: #FFFFFF;}
-
+    color: #2F4F4F; /* Hitam Coklat */
+}
 
 .team-logo {
     max-width: 50px;
@@ -182,32 +267,25 @@ color: #FFFFFF;}
 }
 
 #fixtures .stadium {
-    color: #FFFFFF;
+    color: #2F4F4F; /* Hitam Coklat */
     font-style: italic;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
 #fixtures .stadium-name {
-    color: #1E416D;
+    color: #F5F5DC; /* Krem */
     font-weight: bold;
     font-size: 18px;
 }
-
-
-
 
 /* Style for Standings Section */
 #standings {
     padding: 60px 0;
 }
 
-.section-title {
-    color: #1E416D; /* Dark blue color for section title */
-}
-
 .section-title-h2 {
-    color: #1E416D;
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 /* Style for the Standings Table */
@@ -225,7 +303,7 @@ color: #FFFFFF;}
 
 .table thead th {
     background-color: #E5E5E5;
-    color: #1E416D; /* Dark blue color for table header text */
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -243,13 +321,13 @@ color: #FFFFFF;}
 
 /* Style for Sponsors Section */
 #sponsors {
-    background-color: #1E416D; /* Dark blue background color for sponsors section */
+    background-color: #F5F5DC; /* Krem */
     color: grey; /* White text color for sponsors section */
     padding: 60px 0;
 }
 
 .section-title {
-    color: #FFFFFF; /* Dark blue color for section title */
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 /* Style for Sponsor Cards */
@@ -284,8 +362,8 @@ color: #FFFFFF;}
 
 /* Style for Footer Section */
 footer {
-    background-color: #1E416D; /* Dark blue background color for footer */
-    color: #FFFFFF; /* White text color for footer */
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
     padding-top: 2rem;
 }
 
@@ -298,7 +376,7 @@ footer h6 img {
 /* Style for Address Section */
 footer p {
     margin-bottom: 1rem;
-    color: #FFFFFF; /* White text color for footer address */
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 /* Style for Social Media Buttons */
@@ -319,13 +397,13 @@ footer .col-md-4 {
 footer .text-center {
     font-size: 14px;
     padding: 3px;
-    color: #FFFFFF; /* White text color for copyright section */
+    color: #2F4F4F; /* Hitam Coklat */
 }
 
 /* Style for Horizontal Rule */
 footer hr {
     margin: 1rem 0;
-    border-color: #FFFFFF; /* White border color for horizontal rule */
+    border-color: #2F4F4F; /* Hitam Coklat */
 }
 
 /* Media query for larger screens */
@@ -347,6 +425,6 @@ footer hr {
 
     .navbar-nav .nav-link {
         padding: 10px;
-        color: #FFFFFF; /* White text color for navbar links on larger screens */
+        color: #2F4F4F; /* Hitam Coklat */
     }
 }
