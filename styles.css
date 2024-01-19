@@ -151,6 +151,11 @@ header {
     transform: scale(1.05);
 }
 
+
+.fixture p {
+color: #FFFFFF;}
+
+
 .team-logo {
     max-width: 50px;
     max-height: 50px;
