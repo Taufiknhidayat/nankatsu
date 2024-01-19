@@ -1,5 +1,5 @@
 /* Reset some default browser styles */
-body, h1, h2, h3, p, figure {
+body, h1, h3, p, figure {
     margin: 0;
     padding: 0;
     color: #1E416D; /* Dark blue color for text content */
@@ -245,7 +245,7 @@ color: #FFFFFF;}
 }
 
 .section-title {
-    color: #1E416D; /* Dark blue color for section title */
+    color: #FFFFFF; /* Dark blue color for section title */
 }
 
 /* Style for Sponsor Cards */
