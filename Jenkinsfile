@@ -1,35 +1,52 @@
 pipeline {
-    agent any 
+    agent any
+    
+    environment {
+        // Definisi variabel lingkungan jika diperlukan
+    }
+    
     stages {
-        stage('Static Analysis') {
+        stage('Checkout') {
             steps {
-                echo 'Run the static analysis to the code' 
+                // Checkout kode dari repositori
+                checkout scm
             }
         }
-        stage('Compile') {
+        
+        stage('Build') {
             steps {
-                echo 'Compile the source code' 
+                // Tidak ada langkah build yang khusus dijelaskan dalam kode CSS,
+                // Tambahkan langkah-langkah build sesuai kebutuhan proyek Anda
             }
         }
-        stage('Security Check') {
+        
+        stage('Test') {
             steps {
-                echo 'Run the security check against the application' 
+                // Tidak ada langkah tes yang khusus dijelaskan dalam kode CSS,
+                // Tambahkan langkah-langkah tes sesuai kebutuhan proyek Anda
             }
         }
-        stage('Run Unit Tests') {
+        
+        stage('Deploy') {
             steps {
-                echo 'Run unit tests from the source code' 
+                // Tidak ada langkah deploy yang khusus dijelaskan dalam kode CSS,
+                // Tambahkan langkah-langkah deploy sesuai kebutuhan proyek Anda
             }
         }
-        stage('Run Integration Tests') {
-            steps {
-                echo 'Run only crucial integration tests from the source code' 
-            }
+    }
+    
+    post {
+        success {
+            // Tindakan yang akan diambil jika pipeline berhasil
+            echo 'Build and deployment successful!'
         }
-        stage('Publish Artifacts') {
-            steps {
-                echo 'Save the assemblies generated from the compilation' 
-            }
+        failure {
+            // Tindakan yang akan diambil jika pipeline gagal
+            echo 'Build or deployment failed!'
+        }
+        always {
+            // Tindakan yang akan diambil selalu, baik berhasil atau gagal
+            echo 'Pipeline completed!'
         }
     }
 }
