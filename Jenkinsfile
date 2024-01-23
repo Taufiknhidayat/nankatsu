@@ -13,23 +13,29 @@ pipeline {
             }
         }
         
+        stage('Install Dependencies') {
+            steps {
+                // Install dependencies menggunakan npm
+                sh 'npm install'
+            }
+        }
+        
         stage('Build') {
             steps {
-                // Tidak ada langkah build yang khusus dijelaskan dalam kode CSS,
-                // Tambahkan langkah-langkah build sesuai kebutuhan proyek Anda
+                // Build proyek CSS jika diperlukan
+                // Misalnya: sh 'npm run build'
             }
         }
         
         stage('Test') {
             steps {
-                // Tidak ada langkah tes yang khusus dijelaskan dalam kode CSS,
-                // Tambahkan langkah-langkah tes sesuai kebutuhan proyek Anda
+                // Jalankan langkah-langkah tes jika diperlukan
+                // Misalnya: sh 'npm test'
             }
         }
         
         stage('Deploy') {
             steps {
-                // Tidak ada langkah deploy yang khusus dijelaskan dalam kode CSS,
                 // Tambahkan langkah-langkah deploy sesuai kebutuhan proyek Anda
             }
         }
