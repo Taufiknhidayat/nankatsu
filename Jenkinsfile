@@ -1,58 +1,35 @@
 pipeline {
-    agent any
-    
-    environment {
-        // Definisi variabel lingkungan jika diperlukan
-    }
-    
+    agent any 
     stages {
-        stage('Checkout') {
+        stage('Static Analysis') {
             steps {
-                // Checkout kode dari repositori
-                checkout scm
+                echo 'Run the static analysis to the code' 
             }
         }
-        
-        stage('Install Dependencies') {
+        stage('Compile') {
             steps {
-                // Install dependencies menggunakan npm
-                sh 'npm install'
+                echo 'Compile the source code' 
             }
         }
-        
-        stage('Build') {
+        stage('Security Check') {
             steps {
-                // Build proyek CSS jika diperlukan
-                // Misalnya: sh 'npm run build'
+                echo 'Run the security check against the application' 
             }
         }
-        
-        stage('Test') {
+        stage('Run Unit Tests') {
             steps {
-                // Jalankan langkah-langkah tes jika diperlukan
-                // Misalnya: sh 'npm test'
+                echo 'Run unit tests from the source code' 
             }
         }
-        
-        stage('Deploy') {
+        stage('Run Integration Tests') {
             steps {
-                // Tambahkan langkah-langkah deploy sesuai kebutuhan proyek Anda
+                echo 'Run only crucial integration tests from the source code' 
             }
         }
-    }
-    
-    post {
-        success {
-            // Tindakan yang akan diambil jika pipeline berhasil
-            echo 'Build and deployment successful!'
-        }
-        failure {
-            // Tindakan yang akan diambil jika pipeline gagal
-            echo 'Build or deployment failed!'
-        }
-        always {
-            // Tindakan yang akan diambil selalu, baik berhasil atau gagal
-            echo 'Pipeline completed!'
+        stage('Publish Artifacts') {
+            steps {
+                echo 'Save the assemblies generated from the compilation' 
+            }
         }
     }
 }
