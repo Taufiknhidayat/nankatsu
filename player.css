@@ -1,0 +1,92 @@
+/* Navbar styles */
+.navbar {
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Navbar Brand styles */
+.navbar-brand {
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Section title styles */
+.section-title {
+    margin-bottom: 15px;
+}
+
+/* Player position section styles */
+.player-position-section {
+    padding: 60px 0;
+    text-align: center; /* Center-align text */
+}
+
+.position-title {
+    color: #2F4F4F; /* Hitam Coklat */
+    margin-bottom: 20px;
+}
+
+/* Card styles */
+.card-deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 300px;
+    margin: 10px;
+    background-color: #F5F5DC; /* Krem */
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+.card img {
+    max-width: 100%;
+    height: 300px;
+}
+
+.card-body {
+    text-align: left;
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+.info p {
+    margin: 0;
+}
+
+.badge {
+    background-color: #D2B48C; /* Burlywood */
+    color: #2F4F4F; /* Hitam Coklat */
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+    .navbar .navbar-collapse {
+        display: block;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        color: #2F4F4F; /* Hitam Coklat */
+    }
+}
