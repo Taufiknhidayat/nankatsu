@@ -1,471 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nankatsu Fc</title>
+    <title>Nankatsu FC</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <link rel="stylesheet" href="styles.css">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/fixtures.css">
+    <link rel="stylesheet" href="css/sponsors.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-
 <body>
-
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/Logo.png" alt="Logo Tim" style="max-height: 40px;">
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="contact-info">
+                <a href="mailto:info@nankatsufc.com" class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@nankatsufc.com</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">BERANDA</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="aboutClubDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                TENTANG KLUB
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="aboutClubDropdown">
-                                <a class="dropdown-item" href="#team">SEJARAH</a>
-                                <a class="dropdown-item" href="player.html">PEMAIN</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="galery.html">MEDIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PERTANDINGAN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">YANG LAIN</a>
-                        </li>
-                    </ul>
-                </div>
+                <a href="tel:+621234567890" class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+62 123 456 7890</span>
+                </a>
             </div>
-        </nav>
-
-        <div class="background">
-            <div class="background-image mb-5 pb-5">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-    </header>
+    </div>
 
-    <!-- Main Content -->
-    <main>
-
-        <!-- Team Information Section -->
-        <section id="team" class="py-5 pt-5">
-            <div class="container">
-                <div class="row">
-                    <!-- Kolom pertama -->
-                    <figure class="col-6">
-                        <img src="assets/Nankatsu.jpeg" alt="Image Description" class="img-fluid" style="height: 100%;">
-                    </figure>
-                    <!-- Kolom kedua -->
-                    <article class="col-6">
-                        <h3>Sejarah</h3>
-                        <h1>Nankatsu FC</h1>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt facere ullam laborum
-                            ut, molestias laudantium repudiandae totam cum! Laudantium minima blanditiis quisquam
-                            laborum! Culpa illo quaerat aliquid dolorem sapiente!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolore consectetur odio nemo
-                            consequuntur, inventore consequatur dolor odit quibusdam temporibus, a rem aperiam
-                            voluptates ullam impedit non doloribus eligendi illo!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sit adipisci consequuntur at
-                            labore, magni id eveniet neque, nostrum soluta officiis deleniti explicabo eius, nihil nemo
-                            sed fuga vero obcaecati?
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Players Section -->
-        <section id="players" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center section-title-h2">Pemain</h2>
-                <!-- Add details about your players here -->
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="assets/De gea.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">David de Gea <span class="badge badge-secondary">1</span></h5>
-                            <div class="info">
-                                <p> Spanyol</p>
-                                <p> Penjaga gawang</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/De gea.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">David de Gea <span class="badge badge-secondary">1</span></h5>
-                            <div class="info">
-                                <p> Spanyol</p>
-                                <p> Penjaga gawang</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/lindelof.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Victor Lindelof <span class="badge badge-secondary">3</span></h5>
-                            <div class="info">
-                                <p> Swedia</p>
-                                <p> Pemain Belakang</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <a href="player.html" class="btn btn-primary" onclick="showMorePlayers()">View More Players</a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Fixtures Section -->
-        <section id="fixtures" class="py-5">
-            <div class="container">
-                <h2 class="text-center section-title-h2">Jadwal Pertandingan</h2>
-
-                <div class="row">
-                    <!-- Fixture 1 -->
-                    <div class="col-md-4">
-                        <div class="fixture">
-                            <p class="stadium">Stadion</p>
-                            <div class="teams">
-                                <span class="team-logo"><img src="assets/Logo.png" alt="Team C Logo"></span>
-                                <span class="vs">vs</span>
-                                <span class="team-logo"><img src="assets/Logo.png" alt="Team C Logo"></span>
-                            </div>
-                            <div class="date-time">
-                                <p>25 January 2024</p>
-                                <p>Jam: 15:00 WIB</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Fixture 2 -->
-                    <div class="col-md-4">
-                        <div class="fixture">
-                            <p class="stadium">Stadion</p>
-                            <div class="teams">
-                                <span class="team-logo"><img src="assets/Logo.png" alt="Team C Logo"></span>
-                                <span class="vs">vs</span>
-                                <span class="team-logo"><img src="assets/Logo.png" alt="Team C Logo"></span>
-                            </div>
-                            <div class="date-time">
-                                <p> 1 February 2024</p>
-                                <p>18:30 WIB</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Fixture 3 -->
-                    <div class="col-md-4">
-                        <div class="fixture">
-                            <p class="stadium">Stadion</p>
-                            <div class="teams">
-                                <span class="team-logo"><img src="assets/Logo.png" alt="Team C Logo"></span>
-                                <span class="vs">vs</span>
-                                <span class="team-logo"><img src="assets/Logo.png" alt="Team C Logo"></span>
-                            </div>
-                            <div class="date-time">
-                                <p> 1 February 2024</p>
-                                <p>18:30 WIB</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add more fixtures as needed -->
-
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Standings Section -->
-        <section id="standings" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center section-title-h2">Standings</h2>
-                <!-- Add current team standings here -->
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Team</th>
-                                <th scope="col">Wins</th>
-                                <th scope="col">Losses</th>
-                                <th scope="col">Draws</th>
-                                <th scope="col">Points</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Sample data, replace with actual team standings -->
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Team A</td>
-                                <td>5</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>16</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Team B</td>
-                                <td>4</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Team C</td>
-                                <td>6</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>20</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Team D</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>1</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Team E</td>
-                                <td>2</td>
-                                <td>5</td>
-                                <td>3</td>
-                                <td>9</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Team F</td>
-                                <td>4</td>
-                                <td>2</td>
-                                <td>4</td>
-                                <td>16</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>Team G</td>
-                                <td>5</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>16</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>Team H</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>13</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Team I</td>
-                                <td>1</td>
-                                <td>7</td>
-                                <td>1</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Team J</td>
-                                <td>2</td>
-                                <td>6</td>
-                                <td>2</td>
-                                <td>8</td>
-                            </tr>
-                            <!-- Add more teams as needed -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Sponsors Section -->
-        <section id="sponsors" class="py-5">
-            <div class="container">
-                <h2 class="text-center section-title">Our Sponsors</h2>
-                <!-- Add information about team sponsors here -->
-                <div class="row">
-                    <!-- Sponsor 1 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/c8375bd6-21c0-4769-86fa-08eefc577611.jpeg"
-                                class="card-img-top sponsor-logo img-fluid" alt="Sponsor 1" data-toggle="modal"
-                                data-target="#sponsorModal1">
-                        </div>
-                    </div>
-
-                    <!-- Sponsor 2 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/5c20da94-1bec-49cb-b5b4-3277072155f1.jpeg"
-                                class="card-img-top sponsor-logo img-fluid" alt="Sponsor 2" data-toggle="modal"
-                                data-target="#sponsorModal2">
-                        </div>
-                    </div>
-
-                    <!-- Sponsor 3 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/ArtClub_Product_Service_Studio di Instagram _Biar berkah, menjalani hidup, agar supaya, kita selamat__.jpeg"
-                                class="card-img-top sponsor-logo img-fluid" alt="Sponsor 3" data-toggle="modal"
-                                data-target="#sponsorModal3">
-                        </div>
-                    </div>
-                    <!-- Add more sponsors as needed -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Sponsor Modals -->
-        <!-- Modal 1 -->
-        <div class="modal fade" id="sponsorModal1" tabindex="-1" role="dialog" aria-labelledby="sponsorModal1Label"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="sponsorModal1Label">Sponsor 1</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Add information about Sponsor 1 here -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at elit vitae urna aliquam
-                            vehicula.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 2 -->
-        <div class="modal fade" id="sponsorModal2" tabindex="-1" role="dialog" aria-labelledby="sponsorModal2Label"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="sponsorModal2Label">Sponsor 2</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Add information about Sponsor 2 here -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at elit vitae urna aliquam
-                            vehicula.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 3 -->
-        <div class="modal fade" id="sponsorModal3" tabindex="-1" role="dialog" aria-labelledby="sponsorModal3Label"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="sponsorModal3Label">Sponsor 3</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Add information about Sponsor 3 here -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at elit vitae urna aliquam
-                            vehicula.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Add more modals as needed -->
-
-    </main>
-
-
-    <!-- Footer Section -->
-    <footer class="text-center text-lg-start text-dark">
-        <!-- Grid container -->
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <!-- Section: Links -->
-            <section>
-                <!--Grid row-->
-                <div class="row">
-                    <!-- Grid column -->
-                    <div class="d-flex justify-content-center">
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/taufiknur_hdyt/"
-                            class="btn btn-outline-dark btn-floating m-1" role="button"><i
-                                class="fab fa-instagram"></i></a>
-                        <!-- Facebook -->
-                        <a class="btn btn-outline-dark btn-floating m-1" role="button"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <!-- Twitter -->
-                        <a class="btn btn-outline-dark btn-floating m-1" role="button"><i
-                                class="fab fa-twitter"></i></a>
-                    </div>
-            </section>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Nankatsu FC" height="40">
+                <span>Nankatsu FC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tim
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/player.html">Pemain</a></li>
+                            <li><a class="dropdown-item" href="pages/coach.html">Pelatih</a></li>
+                            <li><a class="dropdown-item" href="pages/management.html">Manajemen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/fixtures.html">Jadwal & Hasil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/news.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="pages/gallery.html">Galeri</a></li>
+                            <li><a class="dropdown-item" href="pages/videos.html">Video</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            <hr class="my-3">
-
-            <!-- Section: Copyright -->
-            <section class="p-3">
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-12 text-center">
-                        © 2024 Nankatsu. ALL RIGHT RESERVED.
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">NANKATSU FC</h1>
+                <p class="hero-subtitle">Klub Sepak Bola dengan Semangat Juara</p>
+                <div class="hero-buttons">
+                    <a href="pages/fixtures.html" class="btn btn-primary btn-lg">Jadwal Pertandingan</a>
+                    <a href="pages/about.html" class="btn btn-outline-light btn-lg">Tentang Klub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="fixtures-container"></div>
+    
+    <!-- Team/History Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">Tentang Kami</h6>
+                <h2 class="section-title">SEJARAH KLUB</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="history-image-container">
+                        <img src="assets/Nankatsu.jpeg" alt="Tim Nankatsu" class="img-fluid rounded shadow">
+                        <div class="history-image-accent"></div>
                     </div>
                 </div>
-            </section>
+                <div class="col-lg-6">
+                    <h3 class="history-title">Perjalanan Nankatsu FC</h3>
+                    <div class="history-year-badge">Sejak 1983</div>
+                    <p class="history-text">Nankatsu FC didirikan pada tahun 1983 oleh sekelompok pemain muda yang bersemangat. Klub ini telah menjadi simbol semangat juara dan dedikasi dalam sepak bola Jepang.</p>
+                    <p class="history-text">Dengan filosofi permainan yang menekankan pada teknik dan kerjasama tim, Nankatsu FC telah memenangkan berbagai kompetisi dan menghasilkan banyak pemain berbakat yang bermain di level internasional.</p>
+                    <div class="mt-4">
+                        <a href="pages/about.html" class="btn btn-primary btn-lg">Tentang Kami</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+    
+    <!-- Players Preview Section -->
+    <section id="players-preview" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">Tim Utama</h6>
+                <h2 class="section-title">PEMAIN KAMI</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="players-slider">
+                <div class="players-container">
+                    <!-- Featured Player 1 -->
+                    <div class="player-card-wrapper">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <div class="player-number">10</div>
+                                <img src="assets/De gea.jpeg" alt="Tsubasa Ozora">
+                            </div>
+                            <div class="player-info">
+                                <h3 class="player-name">Tsubasa Ozora</h3>
+                                <div class="player-details">
+                                    <span class="player-position">Gelandang</span>
+                                    <span class="player-nationality">
+                                        <img src="assets/flags/japan.png" alt="Japan">
+                                        <span>Jepang</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Player 2 -->
+                    <div class="player-card-wrapper">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <div class="player-number">1</div>
+                                <img src="assets/lindelof.jpeg" alt="Genzo Wakabayashi">
+                            </div>
+                            <div class="player-info">
+                                <h3 class="player-name">Genzo Wakabayashi</h3>
+                                <div class="player-details">
+                                    <span class="player-position">Kiper</span>
+                                    <span class="player-nationality">
+                                        <img src="assets/flags/japan.png" alt="Japan">
+                                        <span>Jepang</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Player 3 -->
+                    <div class="player-card-wrapper">
+                        <div class="player-card">
+                            <div class="player-image">
+                                <div class="player-number">9</div>
+                                <img src="assets/lindelof.jpeg" alt="Kojiro Hyuga">
+                            </div>
+                            <div class="player-info">
+                                <h3 class="player-name">Kojiro Hyuga</h3>
+                                <div class="player-details">
+                                    <span class="player-position">Penyerang</span>
+                                    <span class="player-nationality">
+                                        <img src="assets/flags/japan.png" alt="Japan">
+                                        <span>Jepang</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="pages/player.html" class="btn btn-primary btn-lg">Lihat Semua Pemain</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">Partner</h6>
+                <h2 class="section-title">SPONSOR KAMI</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="sponsors-container">
+                <div class="sponsor-item">
+                    <img src="assets/5c20da94-1bec-49cb-b5b4-3277072155f1.jpeg" alt="Sponsor 1" class="img-fluid sponsor-logo">
+                </div>
+                <div class="sponsor-item">
+                    <img src="assets/ArtClub_Product_Service_Studio di Instagram _Biar berkah, menjalani hidup, agar supaya, kita selamat__.jpeg" alt="Sponsor 2" class="img-fluid sponsor-logo">
+                </div>
+                <div class="sponsor-item">
+                    <img src="assets/c8375bd6-21c0-4769-86fa-08eefc577611.jpeg" alt="Sponsor 3" class="img-fluid sponsor-logo">
+                </div>
+                <div class="sponsor-item">
+                    <img src="assets/'Krusty Krab' Poster _ art print by Dale Hutchinson _ Displate.jpeg" alt="Sponsor 4" class="img-fluid sponsor-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="footer-container"></div>
 
-
-    <!-- Tambahkan link ke Bootstrap JS dan jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEX/5Pa5II9T5nOJKtL7JpETCV06MIIYxCaR6"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-rs7F2zQlePkz6qOe1F7MPE5NOlLQ7c1tsSzWfhc5ZvGATcz2LJ5n0fFkRCY0BbFj"
-        crossorigin="anonymous"></script>
-    <!-- Tambahkan link ke file JavaScript eksternal -->
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        import App from './js/app.js';
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const app = new App();
+            app.init();
+        });
+    </script>
 </body>
-
 </html>
+
+
+

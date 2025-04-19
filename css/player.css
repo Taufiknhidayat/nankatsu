@@ -1,0 +1,160 @@
+/* ---------------------------------------------
+   Only Player Page Specific Styles
+--------------------------------------------- */
+
+.player-section {
+    padding-top: 6rem;
+    background: var(--bg-light);
+  }
+  
+  .player-position-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .position-title {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+  }
+  
+  /* Player Card */
+  .player-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    background: var(--bg-light);
+    box-shadow: 0 4px 8px rgba(15, 23, 42, 0.05);
+    overflow: hidden;
+  }
+  
+  .player-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .player-card .card-img-top {
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .player-card .card-body {
+    padding: 1.5rem;
+  }
+  
+  .player-card .card-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+  
+  /* Info and Stats */
+  .player-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .player-info i {
+    width: 24px;
+    color: var(--secondary);
+    margin-right: 0.5rem;
+  }
+  
+  .player-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .stat-item {
+    background-color: var(--gray);
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .stat-value {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--text);
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .player-section {
+      padding-top: 4rem;
+    }
+  
+    .player-stats {
+      gap: 0.4rem;
+    }
+  
+    .stat-value {
+      font-size: 1.1rem;
+    }
+  
+    .stat-label {
+      font-size: 0.7rem;
+    }
+  }
+
+
+/* Player page specific styles */
+.player-section {
+    padding-top: 100px;
+    background-color: #f8f9fa;
+}
+
+.player-filter {
+    margin-bottom: 30px;
+}
+
+.player-filter .nav-link {
+    color: #0f172a;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+.player-filter .nav-link:hover,
+.player-filter .nav-link.active {
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .player-filter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .player-filter .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .player-section {
+        padding-top: 80px;
+    }
+    
+    .player-filter .nav-link {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+}
+  

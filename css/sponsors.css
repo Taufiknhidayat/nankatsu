@@ -1,0 +1,55 @@
+/* Sponsors Section Styling */
+#sponsors {
+    background-color: #f8fafc;
+    padding: 60px 0;
+}
+
+.sponsors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sponsor-logo {
+    max-height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Remove any scrolling indicators */
+.sponsor-controls,
+.sponsor-indicators {
+    display: none !important;
+}
+
+/* Hide any scrollbar */
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+@media (max-width: 768px) {
+    .sponsor-logo {
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sponsor-logo {
+        max-height: 60px;
+    }
+}

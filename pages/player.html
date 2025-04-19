@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - Nankatsu FC</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/player.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main>
+        <section class="player-section py-5">
+            <div class="container">
+                <h2 class="section-title">Pemain Nankatsu FC</h2>
+                <p class="text-center mb-5">Skuad Utama 2023/2024</p>
+
+                <!-- Goalkeepers -->
+                <div class="position-group mb-5">
+                    <h3 class="position-title">Penjaga Gawang</h3>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card player-card h-100">
+                                <img src="../assets/De_gea.jpeg" class="card-img-top" alt="David de Gea">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title mb-0">David de Gea</h5>
+                                        <span class="badge bg-accent">1</span>
+                                    </div>
+                                    <div class="player-info mb-3">
+                                        <div class="info-item">
+                                            <i class="fas fa-flag me-2"></i>
+                                            <span>Spanyol</span>
+                                        </div>
+                                    </div>
+                                    <div class="stats-grid">
+                                        <div class="stat-box">
+                                            <div class="stat-number">89</div>
+                                            <div class="stat-label">Refleks</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-number">85</div>
+                                            <div class="stat-label">Posisi</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-number">87</div>
+                                            <div class="stat-label">Penyelamatan</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Defenders -->
+                <div class="position-group mb-5">
+                    <h3 class="position-title">Pemain Belakang</h3>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card player-card h-100">
+                                <img src="../assets/lindelof.jpeg" class="card-img-top" alt="Victor Lindelof">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title mb-0">Victor Lindelof</h5>
+                                        <span class="badge bg-accent">3</span>
+                                    </div>
+                                    <div class="player-info mb-3">
+                                        <div class="info-item">
+                                            <i class="fas fa-flag me-2"></i>
+                                            <span>Swedia</span>
+                                        </div>
+                                    </div>
+                                    <div class="stats-grid">
+                                        <div class="stat-box">
+                                            <div class="stat-number">82</div>
+                                            <div class="stat-label">Bertahan</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-number">78</div>
+                                            <div class="stat-label">Kecepatan</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-number">80</div>
+                                            <div class="stat-label">Passing</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script type="module">
+        import App from '../js/app.js';
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const app = new App();
+            app.init();
+        });
+    </script>
+</body>
+</html>
