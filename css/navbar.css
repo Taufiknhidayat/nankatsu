@@ -131,7 +131,7 @@
     background-color: #1e1b2e;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     padding: 8px 0;
     margin-top: 10px;
     min-width: 200px;
@@ -139,15 +139,46 @@
 
 .dropdown-item {
     color: var(--text-light);
-    padding: 8px 20px;
+    padding: 12px 20px;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus,
-.dropdown-item.active {
-    background-color: rgba(255, 255, 255, 0.1);
+.dropdown-item:hover {
+    background-color: rgba(59, 130, 246, 0.15);
     color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(-180deg);
+}
+
+/* Responsive Dropdown */
+@media (max-width: 991.98px) {
+    .dropdown-menu {
+        background-color: #1e1b2e;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-item {
+        padding: 12px 25px;
+        color: var(--text-light);
+    }
+
+    .dropdown-item:hover {
+        background-color: rgba(59, 130, 246, 0.15);
+        color: var(--accent-color);
+    }
 }
 
 /* Mobile Adjustments untuk dropdown */
@@ -308,5 +339,60 @@ body {
 @media (max-width: 991.98px) {
     body {
         padding-top: 70px;
+    }
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    background-color: var(--white);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    min-width: 200px;
+}
+
+.dropdown-item {
+    color: var(--text-dark);
+    padding: 0.75rem 1.25rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateX(5px);
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(-180deg);
+}
+
+/* Responsive Dropdown */
+@media (max-width: 991.98px) {
+    .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(59, 130, 246, 0.05);
+    }
+
+    .dropdown-item {
+        padding: 0.75rem 1.5rem;
+        color: var(--text-dark);
+    }
+
+    .dropdown-item:hover {
+        transform: translateX(10px);
     }
 }

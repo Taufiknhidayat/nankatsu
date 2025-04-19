@@ -5,16 +5,14 @@
     background-image: url('../assets/stadium.jpg');
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 106px); /* Adjust height to account for navbar */
+    height: 300px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     color: var(--text-light);
     text-align: center;
-    margin-top: 106px; /* Match navbar height */
-    padding: 0; /* Remove padding */
-    z-index: 1;
+    margin-top: -76px;
+    padding-top: 76px;
 }
 
 .fixtures-hero-overlay {
@@ -23,35 +21,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(var(--primary-color-rgb), 0.7);
-    z-index: 0;
-}
-
-.fixtures-hero-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    padding: 0 20px;
-}
-
-/* Responsive Styles */
-@media (max-width: 992px) {
-    .fixtures-hero {
-        height: calc(100vh - 70px);
-        margin-top: 70px;
-    }
-}
-
-@media (max-width: 768px) {
-    .fixtures-hero {
-        height: 60vh;
-    }
-}
-
-@media (max-width: 576px) {
-    .fixtures-hero {
-        height: 50vh;
-    }
+    background-color: rgba(15, 23, 42, 0.7);
 }
 
 .fixtures-hero-title {
@@ -79,51 +49,64 @@
     color: var(--text-light);
 }
 
-/* Fixtures Section */
-#fixtures {
-    background-color: var(--background-light);
+/* Fixtures Tabs Section */
+.fixtures-tabs {
     padding: 60px 0;
 }
 
-/* Fixtures Slider */
-.fixtures-slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+.fixtures-tab-container {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.fixtures-container {
+.fixtures-nav-tabs {
+    border-bottom: 2px solid var(--gray);
+    margin-bottom: 30px;
     display: flex;
+    justify-content: center;
+}
+
+.fixtures-nav-tabs .nav-item {
+    margin: 0 10px;
+}
+
+.fixtures-nav-tabs .nav-link {
+    color: var(--text-muted);
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.fixtures-nav-tabs .nav-link:hover {
+    color: var(--accent-color);
+}
+
+.fixtures-nav-tabs .nav-link.active {
+    color: var(--accent-color);
+    background-color: transparent;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* Fixtures List */
+.fixtures-list {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    padding: 10px 5px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
-.fixtures-container::-webkit-scrollbar {
-    display: none;
-}
-
-/* Fixtures Card & Items */
-.fixture-card,
 .fixture-item {
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     padding: 20px;
+    display: flex;
+    align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.fixture-card {
-    min-width: 300px;
-    flex: 0 0 auto;
-}
-
-.fixture-card:hover,
 .fixture-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -134,8 +117,6 @@
     min-width: 100px;
     text-align: center;
     margin-right: 20px;
-    color: var(--accent-color);
-    font-weight: 600;
 }
 
 .date-box {
@@ -233,11 +214,6 @@
     margin-bottom: 5px;
 }
 
-.fixture-venue i {
-    color: var(--accent-color);
-    margin-right: 5px;
-}
-
 .league-badge {
     background-color: var(--gray-light);
     color: var(--text-muted);
@@ -247,94 +223,7 @@
     border-radius: 20px;
 }
 
-/* Tabs Section */
-.fixtures-tabs {
-    padding: 60px 0;
-}
-
-.fixtures-tab-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Navigation Tabs */
-.fixtures-nav-tabs {
-    border-bottom: 2px solid var(--gray);
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.fixtures-nav-tabs .nav-item {
-    margin: 0 10px;
-}
-
-.fixtures-nav-tabs .nav-link {
-    color: var(--text-muted);
-    font-weight: 600;
-    padding: 12px 20px;
-    border: none;
-    border-bottom: 3px solid transparent;
-    border-radius: 0;
-    transition: all 0.3s ease;
-}
-
-.fixtures-nav-tabs .nav-link:hover {
-    color: var(--accent-color);
-}
-
-.fixtures-nav-tabs .nav-link.active {
-    color: var(--accent-color);
-    background-color: transparent;
-    border-bottom: 3px solid var(--accent-color);
-}
-
-/* Season Schedule */
-.season-schedule {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    padding: 30px;
-}
-
-.season-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.season-header h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 5px;
-}
-
-.season-header p {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-}
-
-/* Month Section */
-.month-section {
-    margin-bottom: 40px;
-}
-
-.month-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--gray);
-    margin-bottom: 20px;
-}
-
-.month-fixtures {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* Standings */
+/* Standings Section */
 .standings-section {
     background-color: var(--background-light);
     padding: 60px 0;
@@ -348,7 +237,7 @@
 .standings-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -362,7 +251,7 @@
 
 .standings-table th {
     background-color: var(--primary-color);
-    color: var(--text-light);
+    color: var(--white);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -381,36 +270,15 @@
     border-bottom: none;
 }
 
-/* Standings Legend */
-.standings-legend {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+.team-column {
+    text-align: left;
+    min-width: 200px;
 }
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
-
-.legend-color {
-    width: 15px;
-    height: 15px;
-    border-radius: 3px;
-}
-
-.legend-color.champions { background-color: #e0f2fe; }
-.legend-color.continental { background-color: #d1fae5; }
-.legend-color.relegation { background-color: #fee2e2; }
 
 /* Responsive Styles */
 @media (max-width: 992px) {
     .fixtures-hero {
-        padding-top: 70px; /* Adjust padding for mobile navbar */
+        height: 250px;
     }
     
     .fixtures-hero-title {
@@ -461,11 +329,6 @@
     .fixture-score {
         min-width: 60px;
         font-size: 1rem;
-    }
-    
-    .standings-legend {
-        flex-wrap: wrap;
-        gap: 15px;
     }
 }
 
